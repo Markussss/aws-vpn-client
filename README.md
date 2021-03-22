@@ -1,4 +1,4 @@
-# OpenVPN AWS VPN Linux Client in Docker
+# OpenVPN AWS VPN Linux Client
 
 This is an implementation of the [original](https://github.com/samm-git/aws-vpn-client) AWS VPN client PoC with OpenVPN using SAML authentication, based on the docker setup from [rdvencioneck/aws-vpn-client-docker](https://github.com/rdvencioneck/aws-vpn-client-docker). The goal is to have an easy to consume Linux client, and I just didn't find the docker setup to be so easy after all.
 
