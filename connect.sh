@@ -19,6 +19,11 @@ wait_file() {
   ((++wait_seconds))
 }
 
+cleanup() {
+  rm -f log.txt vpn.modified.config saml-user-and-pass.txt
+}
+trap cleanup exit
+
 while true; do
   cp vpn.{conf,modified.conf}
 
