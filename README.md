@@ -22,6 +22,30 @@ See [the original blog post](https://smallhacks.wordpress.com/2020/07/08/aws-cli
 
 This will attempt to connect as long as the connection fails. For some reason, OpenVPN might fail to establish a connection. This has been mentioned, for example in [threads on serverfault.com](https://serverfault.com/questions/1024546/aws-client-vpn-sso-saml-linux-client). I've experienced that running openvpn as root (with `sudo` greatly reduces the amount of tries it takes to establish a connection).
 
-## Todo
+## Install dependencies
 
-Find all dependencies and document them here.
+I have installed and built this project by in clean docker images of the following distros, while noting which packages are required for building the patched openvpn client.
+
+### Ubuntu:
+
+```bash
+apt install git curl unzip patch gcc automake libtool libssl-dev net-tools liblzo2-dev libpam-dev cmake
+```
+
+### Fedora
+
+```bash
+dnf install git curl unzip patch gcc automake libtool openssl-devel net-tools lzo-devel pam-devel cmake
+```
+
+### OpenSuse
+
+```bash
+zypper install git curl unzip patch gcc automake libtool openssl-devel net-tools-deprecated lzo-devel pam-devel cmake
+```
+
+### Arch
+
+```bash
+pacman -S git curl unzip patch gcc automake autoconf libtool openssl net-tools lzo pam make
+```
