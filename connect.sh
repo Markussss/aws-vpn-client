@@ -60,12 +60,7 @@ while true; do
   rm log.txt
 
   URL=$(echo "$OVPN_OUT" | grep -Eo 'https://.+')
-  unameOut="$(uname -s)"
-  case "${unameOut}" in
-      Linux*)     su "$SUDO_USER" -c "xdg-open $URL";;
-      Darwin*)    open "$URL";;
-      *)          printf "\n\nOpen this URL in your browser: %s" "$URL";;
-  esac
+  printf "\n\n\nOpen this URL in your browser: %s\n\n\n" "$URL"
 
   wait_file "saml-response.txt" 120 || {
     echo "SAML Authentication timed out"

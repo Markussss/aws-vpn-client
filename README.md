@@ -29,23 +29,23 @@ I have installed and built this project by in clean docker images of the followi
 ### Ubuntu:
 
 ```bash
-apt install git curl unzip patch gcc automake libtool libssl-dev net-tools liblzo2-dev libpam-dev cmake
+apt install git curl unzip patch gcc automake libtool libssl-dev net-tools liblzo2-dev libpam-dev cmake openssl golang-bin
 ```
 
 ### Fedora
 
 ```bash
-dnf install git curl unzip patch gcc automake libtool openssl-devel net-tools lzo-devel pam-devel cmake
+dnf install git curl unzip patch gcc automake libtool openssl-devel net-tools lzo-devel pam-devel cmake openssl golang-bin
 ```
 
 ### OpenSuse
 
 ```bash
-zypper install git curl unzip patch gcc automake libtool openssl-devel net-tools-deprecated lzo-devel pam-devel cmake
+zypper install git curl unzip patch gcc automake libtool openssl-devel net-tools-deprecated lzo-devel pam-devel cmake openssl golang-bin
 ```
 
 ### Arch
 
 ```bash
-pacman -S git curl unzip patch gcc automake autoconf libtool openssl net-tools lzo pam make
+pacman -S git curl unzip patch gcc automake autoconf libtool openssl net-tools lzo pam make golang-bin
 ```
