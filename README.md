@@ -6,9 +6,12 @@ See [the original blog post](https://smallhacks.wordpress.com/2020/07/08/aws-cli
 
 ## Content of the repository
 
-- [openvpn-v2.4.9-aws.patch](openvpn-v2.4.9-aws.patch) - patch required to build
+- [openvpn-v2.5.8-aws.patch](openvpn-v2.5.8-aws.patch) - patch required to build
+  AWS compatible OpenVPN v2.5.8, based on the
+  [AWS source code](https://amazon-source-code-downloads.s3.amazonaws.com/aws/clientvpn/wpf-v1.2.0/openvpn-2.4.5-aws-1.tar.gz), adjusted for OpenVPN 2.5.8
+- (Outdated, but still usable) [openvpn-v2.4.9-aws.patch](openvpn-v2.4.9-aws.patch) - patch required to build
   AWS compatible OpenVPN v2.4.9, based on the
-  [AWS source code](https://amazon-source-code-downloads.s3.amazonaws.com/aws/clientvpn/wpf-v1.2.0/openvpn-2.4.5-aws-1.tar.gz) (thanks to @heprotecbuthealsoattac) for the link.
+  [AWS source code](https://amazon-source-code-downloads.s3.amazonaws.com/aws/clientvpn/wpf-v1.2.0/openvpn-2.4.5-aws-1.tar.gz) (thanks to @heprotecbuthealsoattac for the link).
 - [server.go](server.go) - Go server to listen on http://127.0.0.1:35001 and save
   SAML Post data to the file.
 - [build.sh](build.sh) - builds the patched OpenVPN client
