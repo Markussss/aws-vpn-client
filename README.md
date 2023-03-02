@@ -41,7 +41,7 @@ dnf install git curl unzip patch gcc automake libtool openssl-devel net-tools lz
 ### OpenSuse
 
 ```bash
-zypper install git curl unzip patch gcc automake libtool openssl-devel net-tools-deprecated lzo-devel pam-devel cmake openssl golang-bin
+zypper install git curl unzip patch gcc automake libtool openssl-devel net-tools-deprecated lzo-devel pam-devel cmake openssl go-doc
 ```
 
 ### Arch
